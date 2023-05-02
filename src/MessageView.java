@@ -39,10 +39,10 @@ public class MessageView {
             decoratedMessage = new BinaryMessageDecorator(decoratedMessage);
         }
         if (encrypted) {
-            decoratedMessage = new EncryptedMessageDecorator(decoratedMessage);
+            decoratedMessage = new EncryptedMessage(decoratedMessage);
         }
         if (sms) {
-            decoratedMessage = new SmsMessageDecorator(decoratedMessage);
+            decoratedMessage = new SMSDecorator(decoratedMessage);
         }
         return decoratedMessage;
     }
