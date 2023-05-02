@@ -36,7 +36,7 @@ public class MessageView {
             decoratedMessage = new AngryMessageDecorator(decoratedMessage);
         }
         if (binary) {
-            decoratedMessage = new BinaryMessageDecorator(decoratedMessage);
+            decoratedMessage = new BinaryMessage(decoratedMessage);
         }
         if (encrypted) {
             decoratedMessage = new EncryptedMessage(decoratedMessage);
